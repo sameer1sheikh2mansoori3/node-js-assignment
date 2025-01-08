@@ -13,6 +13,7 @@ a brief overview of your project:
 - User can register and login
 - User can add books to the store
 - User can search for books by title and author
+- The whole app is dockerized
 
 ## 🖥️ Tech Stack
 
