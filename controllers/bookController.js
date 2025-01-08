@@ -25,7 +25,7 @@ export const getAllBooks = async (req, res) => {
 
 // Fetch a single book by ID
 export const getBookById = async (req, res) => {
-    console.log("****");
+
     try {
 
         const book = await Book.findById(req.params.id);
@@ -65,7 +65,7 @@ export const deleteBook = async (req, res) => {
 // Search books by title
 // Search books by title
 export const searchBooks = async (req, res) => {
-    console.log(req.query);
+
     try {
         const title = req.query.title;  // Get the title from the query string
 
@@ -91,7 +91,8 @@ export const searchBooks = async (req, res) => {
 
 // Filter books by author and price range
 export const filterBooks = async (req, res) => {
-    console.log(req.query);
+
+
     try {
         const { author, minPrice, maxPrice } = req.query;
 
