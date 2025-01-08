@@ -13,6 +13,9 @@ app.use(express.json());
 // Routes
 app.use('/api/books', bookRoutes);
 app.use('/api/users', userRoutes);
+app.get('/', (req, res) => {
+    res.send('Welcome to the Bookstore API');
+})
 
 // Global Error Handler
 app.use((err, req, res, next) => {

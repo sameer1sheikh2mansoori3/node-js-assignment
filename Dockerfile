@@ -1,20 +1,23 @@
-# Use Node.js as the base image
+# Use the official Node.js image as the base image
 FROM node:16-alpine
 
-# Set working directory inside the container
+# Set the working directory in the container to /app
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy package.json and package-lock.json (if available) to the container
 COPY package*.json ./
 
-# Install dependencies
+# Install the app dependencies
 RUN npm install
 
-# Copy the rest of the application files
+# Install nodemon globally (for development purposes)
+RUN npm install -g nodemon
+
+# Copy the rest of your app code to the container
 COPY . .
 
-# Expose the port (same as in your `.env`)
+# Expose port 8080 (your app's port) to the host machine
 EXPOSE 8080
 
-# Start the app
+# Run the app using the "dev" script in package.json
 CMD ["npm", "run", "dev"]
