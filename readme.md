@@ -50,8 +50,7 @@ cd bookstore-backend
 
 ### 🚧 ongoing work
 
-1. Dokerize the application
-2. Add unit tests using a framework like Jest or Mocha.
+1. Add unit tests using a framework like Jest or Mocha.
 
 ### 🗂️ .env file configuration
 
