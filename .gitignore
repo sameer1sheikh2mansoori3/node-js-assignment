@@ -1,0 +1,55 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+bower_components/
+
+# Environment files
+.env
+
+# Build directories
+dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Coverage directory from testing
+coverage/
+
+# NPM package lock files
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.tgz
+
+# Optional eslint cache
+.eslintcache
+
+# Serverless framework deployment directory
+.serverless/
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# SvelteKit build output
+.svelte-kit/
+
+# Gatsby.js build output
+public/
